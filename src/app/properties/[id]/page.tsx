@@ -16,10 +16,15 @@ import {
   Tooltip,
   Divider,
   Breadcrumbs,
+  Menu,
+  MenuItem,
+  ListItemIcon,
+  ListItemText,
 } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ShareIcon from '@mui/icons-material/Share';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import VerifiedIcon from '@mui/icons-material/Verified';
@@ -39,7 +44,12 @@ import ToastNotification from '@/components/common/ToastNotification';
 import { useFavorites } from '@/hooks/useFavorites';
 import { Property } from '@/types/property';
 import rawPropertiesData from '@/data/properties.json';
-import { formatPrice, formatPricePerSqFt } from '@/utils/formatters';
+import {
+  formatPrice,
+  formatPricePerSqFt,
+  getAgentWhatsAppUrl,
+  getPropertyWhatsAppShareUrl,
+} from '@/utils/formatters';
 
 const allProperties = rawPropertiesData as Property[];
 
@@ -122,14 +132,55 @@ export default function PropertyDetailPage() {
 
   const isFav = favorites.includes(property.id);
 
-  const handleShare = () => {
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(window.location.href);
+  const [shareAnchorEl, setShareAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [currentUrl, setCurrentUrl] = React.useState('');
+
+  React.useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setCurrentUrl(window.location.href);
+    }
+  }, []);
+
+  const handleOpenShareMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setShareAnchorEl(event.currentTarget);
+  };
+
+  const handleCloseShareMenu = () => {
+    setShareAnchorEl(null);
+  };
+
+  const handleCopyLink = () => {
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(currentUrl || window.location.href);
       setToast({
         open: true,
         message: 'Property link copied to clipboard!',
         severity: 'success',
       });
+    }
+    handleCloseShareMenu();
+  };
+
+  const handleShareWhatsApp = () => {
+    if (typeof window !== 'undefined') {
+      const shareUrl = getPropertyWhatsAppShareUrl(property, currentUrl || window.location.href);
+      window.open(shareUrl, '_blank', 'noopener,noreferrer');
+    }
+    handleCloseShareMenu();
+  };
+
+  const handleNativeShare = async () => {
+    handleCloseShareMenu();
+    if (typeof navigator !== 'undefined' && navigator.share) {
+      try {
+        await navigator.share({
+          title: property.title,
+          text: `Check out ${property.title} (${formatPrice(property.price, property.type)}, ${property.location.locality}) on HAVEN`,
+          url: currentUrl || window.location.href,
+        });
+      } catch {
+        // User cancelled share
+      }
     }
   };
 
@@ -181,13 +232,13 @@ export default function PropertyDetailPage() {
 
           {/* Quick Actions (Share & Save) */}
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
-            <Tooltip title="Share property link">
+            <Tooltip title="Share this residence">
               <Button
                 variant="outlined"
                 color="inherit"
                 size="small"
                 startIcon={<ShareIcon />}
-                onClick={handleShare}
+                onClick={handleOpenShareMenu}
                 sx={{
                   borderRadius: 2,
                   borderColor: '#CBD5E1',
@@ -199,6 +250,64 @@ export default function PropertyDetailPage() {
                 Share
               </Button>
             </Tooltip>
+
+            <Menu
+              anchorEl={shareAnchorEl}
+              open={Boolean(shareAnchorEl)}
+              onClose={handleCloseShareMenu}
+              anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+              transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+              slotProps={{
+                paper: {
+                  sx: {
+                    mt: 1,
+                    borderRadius: 3,
+                    boxShadow: '0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.06)',
+                    border: '1px solid #E2E8F0',
+                    minWidth: 220,
+                  },
+                },
+              }}
+            >
+              <MenuItem onClick={handleShareWhatsApp} sx={{ py: 1.25 }}>
+                <ListItemIcon sx={{ color: '#25D366' }}>
+                  <WhatsAppIcon fontSize="small" />
+                </ListItemIcon>
+                <ListItemText
+                  primary={
+                    <Typography sx={{ fontSize: '0.875rem', fontWeight: 600, color: '#0F172A' }}>
+                      Share via WhatsApp
+                    </Typography>
+                  }
+                />
+              </MenuItem>
+              <MenuItem onClick={handleCopyLink} sx={{ py: 1.25 }}>
+                <ListItemIcon sx={{ color: '#64748B' }}>
+                  <ContentCopyIcon fontSize="small" />
+                </ListItemIcon>
+                <ListItemText
+                  primary={
+                    <Typography sx={{ fontSize: '0.875rem', fontWeight: 600, color: '#0F172A' }}>
+                      Copy Link
+                    </Typography>
+                  }
+                />
+              </MenuItem>
+              {typeof navigator !== 'undefined' && typeof navigator.share === 'function' && (
+                <MenuItem onClick={handleNativeShare} sx={{ py: 1.25 }}>
+                  <ListItemIcon sx={{ color: '#D97706' }}>
+                    <ShareIcon fontSize="small" />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary={
+                      <Typography sx={{ fontSize: '0.875rem', fontWeight: 600, color: '#0F172A' }}>
+                        More Sharing Options...
+                      </Typography>
+                    }
+                  />
+                </MenuItem>
+              )}
+            </Menu>
 
             <Tooltip title={isFav ? 'Remove from saved' : 'Save property'}>
               <Button
@@ -446,10 +555,9 @@ export default function PropertyDetailPage() {
                     variant="outlined"
                     color="success"
                     startIcon={<WhatsAppIcon />}
-                    href={`https://wa.me/?text=Hi%2C%20I%20am%20interested%20in%20${encodeURIComponent(
-                      property.title
-                    )}`}
+                    href={getAgentWhatsAppUrl(property.agent, property, currentUrl)}
                     target="_blank"
+                    rel="noopener noreferrer"
                     sx={{ borderRadius: 2.5, fontWeight: 600 }}
                   >
                     WhatsApp
@@ -493,6 +601,7 @@ export default function PropertyDetailPage() {
         onClose={() => setModalOpen(false)}
         agent={property.agent}
         propertyTitle={property.title}
+        propertyLink={currentUrl}
       />
 
       {/* Toast Feedback */}

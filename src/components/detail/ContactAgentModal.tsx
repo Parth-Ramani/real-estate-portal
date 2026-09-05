@@ -29,6 +29,7 @@ interface ContactAgentModalProps {
   onClose: () => void;
   agent: PropertyAgent;
   propertyTitle: string;
+  propertyLink?: string;
 }
 
 export default function ContactAgentModal({
@@ -36,6 +37,7 @@ export default function ContactAgentModal({
   onClose,
   agent,
   propertyTitle,
+  propertyLink,
 }: ContactAgentModalProps) {
   const [name, setName] = React.useState('');
   const [phone, setPhone] = React.useState('');
@@ -261,12 +263,13 @@ export default function ContactAgentModal({
                 variant="outlined"
                 color="success"
                 startIcon={<WhatsAppIcon />}
-                href={`https://wa.me/?text=Hi%20${encodeURIComponent(
+                href={`https://api.whatsapp.com/send?text=Hi%20${encodeURIComponent(
                   agent.name
                 )}%2C%20I%20am%20interested%20in%20"${encodeURIComponent(
                   propertyTitle
-                )}".%20Can%20we%20connect%3F`}
+                )}"%20on%20HAVEN.%20Can%20we%20connect%20for%20a%20private%20tour%3F${propertyLink ? `%0A%0AProperty%20Link%3A%20${encodeURIComponent(propertyLink)}` : ''}`}
                 target="_blank"
+                rel="noopener noreferrer"
                 sx={{ flex: 1, borderRadius: 2 }}
               >
                 WhatsApp
