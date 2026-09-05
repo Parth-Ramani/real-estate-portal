@@ -393,8 +393,9 @@ export default function PropertyDetailPage() {
         {/* Main Content Layout */}
         <Box
           sx={{
-            display: 'grid',
-            gridTemplateColumns: { xs: '1fr', lg: '1fr 380px' },
+            display: { xs: 'flex', lg: 'grid' },
+            flexDirection: { xs: 'column', lg: 'unset' },
+            gridTemplateColumns: { lg: '1fr 380px' },
             gap: { xs: 3, md: 4 },
             alignItems: 'start',
             width: '100%',
@@ -436,12 +437,13 @@ export default function PropertyDetailPage() {
 
               <Box
                 sx={{
-                  display: 'grid',
-                  gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, minmax(0, 1fr))' },
+                  display: 'flex',
+                  flexWrap: 'wrap',
                   gap: 2,
+                  width: '100%',
                 }}
               >
-                <Box sx={{ minWidth: 0 }}>
+                <Box sx={{ width: { xs: '100%', sm: 'calc(50% - 8px)' }, minWidth: 0, boxSizing: 'border-box' }}>
                   <Typography variant="caption" sx={{ color: '#64748B', fontWeight: 600, display: 'block' }}>
                     Possession Status
                   </Typography>
@@ -449,7 +451,7 @@ export default function PropertyDetailPage() {
                     {property.possessionStatus} ({property.possessionDate})
                   </Typography>
                 </Box>
-                <Box sx={{ minWidth: 0 }}>
+                <Box sx={{ width: { xs: '100%', sm: 'calc(50% - 8px)' }, minWidth: 0, boxSizing: 'border-box' }}>
                   <Typography variant="caption" sx={{ color: '#64748B', fontWeight: 600, display: 'block' }}>
                     RERA Registration
                   </Typography>

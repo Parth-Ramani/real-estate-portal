@@ -72,12 +72,8 @@ export default function AmenitiesList({ amenities }: AmenitiesListProps) {
 
       <Box
         sx={{
-          display: 'grid',
-          gridTemplateColumns: {
-            xs: 'repeat(2, minmax(0, 1fr))',
-            sm: 'repeat(2, minmax(0, 1fr))',
-            md: 'repeat(3, minmax(0, 1fr))',
-          },
+          display: 'flex',
+          flexWrap: 'wrap',
           gap: { xs: 1.25, sm: 2 },
           width: '100%',
         }}
@@ -86,16 +82,24 @@ export default function AmenitiesList({ amenities }: AmenitiesListProps) {
           <Box
             key={index}
             sx={{
+              width: {
+                xs: 'calc(50% - 5px)',
+                sm: 'calc(50% - 8px)',
+                md: 'calc(33.333% - 11px)',
+              },
+              boxSizing: 'border-box',
+              flexGrow: 0,
+              flexShrink: 0,
               display: 'flex',
               alignItems: 'center',
               gap: { xs: 1, sm: 1.5 },
               p: { xs: 1.25, sm: 1.5 },
+              minHeight: { xs: 52, sm: 58 },
               borderRadius: 2.5,
               backgroundColor: '#F8FAFC',
               border: '1px solid #F1F5F9',
               minWidth: 0,
               overflow: 'hidden',
-              boxSizing: 'border-box',
               transition: 'all 0.2s',
               '&:hover': {
                 backgroundColor: '#FFFFFF',

@@ -21,7 +21,7 @@ export default function PropertyOverview({ property }: PropertyOverviewProps) {
   const specs = [
     {
       icon: <BedIcon sx={{ color: '#D97706' }} />,
-      label: 'Bedrooms (BHK)',
+      label: 'Bedrooms',
       value: `${property.bhk} BHK`,
     },
     {
@@ -90,13 +90,11 @@ export default function PropertyOverview({ property }: PropertyOverviewProps) {
         Property Overview & Specifications
       </Typography>
 
+      {/* Flexbox container - immune to WebKit iOS CSS grid overlap bugs */}
       <Box
         sx={{
-          display: 'grid',
-          gridTemplateColumns: {
-            xs: 'repeat(2, minmax(0, 1fr))',
-            sm: 'repeat(3, minmax(0, 1fr))',
-          },
+          display: 'flex',
+          flexWrap: 'wrap',
           gap: { xs: 1.25, sm: 2 },
           width: '100%',
         }}
@@ -105,59 +103,80 @@ export default function PropertyOverview({ property }: PropertyOverviewProps) {
           <Box
             key={index}
             sx={{
-              p: { xs: 1.5, sm: 2 },
+              width: {
+                xs: 'calc(50% - 5px)',
+                sm: 'calc(33.333% - 11px)',
+              },
+              boxSizing: 'border-box',
+              flexGrow: 0,
+              flexShrink: 0,
+              p: { xs: 1.25, sm: 1.75 },
               borderRadius: 3,
               backgroundColor: '#F8FAFC',
               border: '1px solid #F1F5F9',
               display: 'flex',
-              flexDirection: { xs: 'column', md: 'row' },
-              alignItems: { xs: 'flex-start', md: 'center' },
-              gap: { xs: 1, sm: 1.5 },
+              alignItems: 'center',
+              gap: { xs: 1.25, sm: 1.5 },
+              minHeight: { xs: 70, sm: 76 },
               minWidth: 0,
               overflow: 'hidden',
-              boxSizing: 'border-box',
+              transition: 'all 0.2s ease',
+              '&:hover': {
+                backgroundColor: '#FFFFFF',
+                borderColor: '#CBD5E1',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+              },
             }}
           >
             <Box
               sx={{
-                width: { xs: 32, sm: 38 },
-                height: { xs: 32, sm: 38 },
-                borderRadius: 2,
+                width: { xs: 34, sm: 40 },
+                height: { xs: 34, sm: 40 },
+                borderRadius: 2.5,
                 backgroundColor: '#FFFFFF',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 boxShadow: '0 1px 3px rgba(0,0,0,0.06)',
+                border: '1px solid #E2E8F0',
                 flexShrink: 0,
                 '& svg': {
-                  fontSize: { xs: 18, sm: 20 },
+                  fontSize: { xs: 18, sm: 22 },
+                  color: '#D97706',
                 },
               }}
             >
               {item.icon}
             </Box>
-            <Box sx={{ minWidth: 0, width: '100%', overflow: 'hidden' }}>
+            <Box sx={{ minWidth: 0, flex: 1, overflow: 'hidden' }}>
               <Typography
                 variant="caption"
+                title={item.label}
                 sx={{
                   color: '#64748B',
                   fontWeight: 600,
-                  fontSize: { xs: '0.7rem', sm: '0.75rem' },
+                  fontSize: { xs: '0.68rem', sm: '0.75rem' },
                   display: 'block',
                   lineHeight: 1.2,
                   mb: 0.25,
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
                 }}
               >
                 {item.label}
               </Typography>
               <Typography
                 variant="body2"
+                title={item.value}
                 sx={{
                   fontWeight: 700,
                   color: '#0F172A',
                   fontSize: { xs: '0.825rem', sm: '0.9rem' },
                   lineHeight: 1.25,
-                  wordBreak: 'break-word',
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
                 }}
               >
                 {item.value}
