@@ -1,0 +1,1205 @@
+[
+  {
+    "id": "prop-1",
+    "title": "Skyline Luxury Penthouse with Sea View",
+    "description": "Experience ultra-luxury living in this expansive 4 BHK duplex penthouse perched high above the Arabian Sea. Features double-height ceilings, Italian marble flooring, private deck, bespoke designer kitchen, and panoramic skyline vistas.",
+    "type": "buy",
+    "propertyType": "Penthouse",
+    "bhk": 4,
+    "bathrooms": 5,
+    "balconies": 3,
+    "areaSqFt": 3850,
+    "carpetAreaSqFt": 3200,
+    "price": 95000000,
+    "location": {
+      "address": "Tower One, Worli Sea Face",
+      "locality": "Worli",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": "400018"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": true,
+    "furnishingStatus": "Furnished",
+    "facing": "West",
+    "floorNumber": 42,
+    "totalFloors": 45,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Infinity Swimming Pool",
+      "State-of-the-art Gym",
+      "24/7 Concierge & Security",
+      "Private High-Speed Elevator",
+      "Sky Lounge & Bar",
+      "3 Reserved Covered Car Parks",
+      "Automated Smart Home System"
+    ],
+    "agent": {
+      "name": "Vikram Singhania",
+      "phone": "+91 98201 54321",
+      "email": "vikram.s@havenrealty.in",
+      "agency": "Prime Elite Estates",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.9
+    },
+    "createdAt": "2026-08-20T10:00:00Z"
+  },
+  {
+    "id": "prop-2",
+    "title": "Modern Garden Villa in Indiranagar",
+    "description": "An architectural masterpiece nestled in a quiet cul-de-sac of Indiranagar. Boasts a private plunge pool, lush courtyard garden, floor-to-ceiling glass fenestration, premium oak cabinetry, and integrated home solar infrastructure.",
+    "type": "buy",
+    "propertyType": "Villa",
+    "bhk": 4,
+    "bathrooms": 4,
+    "balconies": 2,
+    "areaSqFt": 4200,
+    "carpetAreaSqFt": 3650,
+    "price": 68000000,
+    "location": {
+      "address": "12th Main, HAL 2nd Stage",
+      "locality": "Indiranagar",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pincode": "560038"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": true,
+    "furnishingStatus": "Semi-Furnished",
+    "facing": "East",
+    "floorNumber": 1,
+    "totalFloors": 3,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Private Garden",
+      "Plunge Pool",
+      "Rooftop Solar",
+      "EV Charging Point",
+      "24/7 Security",
+      "CCTV Surveillance",
+      "Staff Quarters"
+    ],
+    "agent": {
+      "name": "Ananya Reddy",
+      "phone": "+91 99800 12345",
+      "email": "ananya.r@havenrealty.in",
+      "agency": "Urban Lux Living",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.8
+    },
+    "createdAt": "2026-08-22T14:30:00Z"
+  },
+  {
+    "id": "prop-3",
+    "title": "Chic 2 BHK Apartment near Bandra Promenade",
+    "description": "Centrally located sunlit 2 BHK apartment in prime Bandra West, minutes away from Carter Road promenade. Features modern minimalist Scandinavian aesthetics, sound-insulated German windows, and modular German kitchen.",
+    "type": "rent",
+    "propertyType": "Apartment",
+    "bhk": 2,
+    "bathrooms": 2,
+    "balconies": 1,
+    "areaSqFt": 1150,
+    "carpetAreaSqFt": 920,
+    "price": 125000,
+    "location": {
+      "address": "Perry Cross Road",
+      "locality": "Bandra West",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": "400050"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": false,
+    "furnishingStatus": "Furnished",
+    "facing": "North-East",
+    "floorNumber": 8,
+    "totalFloors": 14,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Covered Parking",
+      "High Speed Elevators",
+      "24/7 Security",
+      "Piped Natural Gas",
+      "Gymnasium"
+    ],
+    "agent": {
+      "name": "Rohan Deshmukh",
+      "phone": "+91 98202 88990",
+      "email": "rohan.d@havenrealty.in",
+      "agency": "Bandra Prime Properties",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.7
+    },
+    "createdAt": "2026-08-25T11:00:00Z"
+  },
+  {
+    "id": "prop-4",
+    "title": "Elegant 3 BHK with Golf Course View",
+    "description": "Spectacular 3 BHK high-rise condominium overlooking the prestigious DLF Golf Course. Boasts sprawling wraparound balconies, VRV central air conditioning, designer wooden finishes, and access to an exclusive 5-star clubhouse.",
+    "type": "buy",
+    "propertyType": "Apartment",
+    "bhk": 3,
+    "bathrooms": 3,
+    "balconies": 2,
+    "areaSqFt": 2450,
+    "carpetAreaSqFt": 2050,
+    "price": 38500000,
+    "location": {
+      "address": "The Camellias Drive, Golf Course Road",
+      "locality": "DLF Phase 5",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "pincode": "122002"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": true,
+    "furnishingStatus": "Semi-Furnished",
+    "facing": "North",
+    "floorNumber": 18,
+    "totalFloors": 36,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Golf Course View",
+      "Clubhouse & Spa",
+      "Olympic Size Pool",
+      "Tennis & Squash Courts",
+      "Concierge Service",
+      "2 Covered Car Parks",
+      "Power Backup 100%"
+    ],
+    "agent": {
+      "name": "Kavita Kapoor",
+      "phone": "+91 98111 77665",
+      "email": "kavita.k@havenrealty.in",
+      "agency": "Capital Realty Group",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.9
+    },
+    "createdAt": "2026-08-26T09:15:00Z"
+  },
+  {
+    "id": "prop-5",
+    "title": "Contemporary 1 BHK Studio for Tech Professionals",
+    "description": "Smart, ergonomically designed 1 BHK studio in the heart of Whitefield's tech corridor. Includes customized space-saving Murphy bed, high-speed optical fiber connectivity, compact kitchenette, and access to co-working pods.",
+    "type": "rent",
+    "propertyType": "Studio",
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 1,
+    "areaSqFt": 680,
+    "carpetAreaSqFt": 540,
+    "price": 32000,
+    "location": {
+      "address": "Near ITPL Main Gate",
+      "locality": "Whitefield",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pincode": "560066"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1502005229762-ae1b46ab3a69?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": false,
+    "furnishingStatus": "Furnished",
+    "facing": "East",
+    "floorNumber": 5,
+    "totalFloors": 12,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Co-Working Lounge",
+      "High Speed Wi-Fi",
+      "Gym & Yoga Studio",
+      "Cafeteria",
+      "Laundromat",
+      "24/7 Power Backup"
+    ],
+    "agent": {
+      "name": "Karthik Nair",
+      "phone": "+91 97420 44556",
+      "email": "karthik.n@havenrealty.in",
+      "agency": "Silicon Nest Realty",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.6
+    },
+    "createdAt": "2026-08-27T16:45:00Z"
+  },
+  {
+    "id": "prop-6",
+    "title": "Spacious 3 BHK Lake-Facing Residence",
+    "description": "Serene lakeside living in Powai with breathtaking views of Powai Lake and lush green hills. Features expansive French windows, imported marble flooring, modular kitchen with dishwasher, and premium bath fittings.",
+    "type": "buy",
+    "propertyType": "Apartment",
+    "bhk": 3,
+    "bathrooms": 3,
+    "balconies": 2,
+    "areaSqFt": 1850,
+    "carpetAreaSqFt": 1520,
+    "price": 32000000,
+    "location": {
+      "address": "Hiranandani Gardens, Cliff Avenue",
+      "locality": "Powai",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": "400076"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": true,
+    "furnishingStatus": "Semi-Furnished",
+    "facing": "North",
+    "floorNumber": 22,
+    "totalFloors": 30,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Lake View",
+      "Grand Clubhouse",
+      "Swimming Pool",
+      "Jogging Track",
+      "Tennis Court",
+      "Children Play Area",
+      "2 Covered Car Parks"
+    ],
+    "agent": {
+      "name": "Pooja Mehta",
+      "phone": "+91 98205 66778",
+      "email": "pooja.m@havenrealty.in",
+      "agency": "Heritage Landmarks",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.8
+    },
+    "createdAt": "2026-08-28T12:10:00Z"
+  },
+  {
+    "id": "prop-7",
+    "title": "Ultra Modern 5 BHK Waterfront Villa",
+    "description": "The pinnacle of private luxury in Juhu. Set on a private 7000 sq ft plot with direct beach access, private screening theater, temperature-regulated pool, Italian marble master bath with jacuzzi, and 4-car basement parking.",
+    "type": "buy",
+    "propertyType": "Villa",
+    "bhk": 5,
+    "bathrooms": 6,
+    "balconies": 4,
+    "areaSqFt": 6200,
+    "carpetAreaSqFt": 5400,
+    "price": 145000000,
+    "location": {
+      "address": "JVPD Scheme, Near Beach Road",
+      "locality": "Juhu",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": "400049"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": true,
+    "furnishingStatus": "Furnished",
+    "facing": "West",
+    "floorNumber": 1,
+    "totalFloors": 3,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Direct Beach Access",
+      "Private Heated Pool",
+      "Home Theater",
+      "Elevator inside Villa",
+      "4-Car Basement Garage",
+      "Smart Biometric Security",
+      "Staff Accommodation"
+    ],
+    "agent": {
+      "name": "Vikram Singhania",
+      "phone": "+91 98201 54321",
+      "email": "vikram.s@havenrealty.in",
+      "agency": "Prime Elite Estates",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.9
+    },
+    "createdAt": "2026-08-29T10:00:00Z"
+  },
+  {
+    "id": "prop-8",
+    "title": "Sunny 2 BHK Premium Flat for Rent",
+    "description": "Tastefully furnished 2 BHK apartment in a gated high-rise society in Whitefield. Features open-concept living area, balcony garden setup, energy-efficient appliances, and serene township green view.",
+    "type": "rent",
+    "propertyType": "Apartment",
+    "bhk": 2,
+    "bathrooms": 2,
+    "balconies": 2,
+    "areaSqFt": 1280,
+    "carpetAreaSqFt": 1050,
+    "price": 48000,
+    "location": {
+      "address": "Prestige Shantiniketan, Tower 10",
+      "locality": "Whitefield",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pincode": "560066"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": false,
+    "furnishingStatus": "Furnished",
+    "facing": "East",
+    "floorNumber": 11,
+    "totalFloors": 18,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Clubhouse",
+      "Swimming Pool",
+      "Badminton Court",
+      "Kids Play Zone",
+      "Dedicated Covered Parking",
+      "24/7 Security"
+    ],
+    "agent": {
+      "name": "Karthik Nair",
+      "phone": "+91 97420 44556",
+      "email": "karthik.n@havenrealty.in",
+      "agency": "Silicon Nest Realty",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.6
+    },
+    "createdAt": "2026-08-30T14:20:00Z"
+  },
+  {
+    "id": "prop-9",
+    "title": "Minimalist 1 BHK in Bandra Pali Hill",
+    "description": "A designer's haven in the leafy enclave of Pali Hill. Completely refurbished with micro-cement floors, hidden flush doors, premium soundbar integration, and leafy tree-top views from every window.",
+    "type": "buy",
+    "propertyType": "Apartment",
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 1,
+    "areaSqFt": 620,
+    "carpetAreaSqFt": 510,
+    "price": 18500000,
+    "location": {
+      "address": "Zig Zag Road, Pali Hill",
+      "locality": "Bandra West",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": "400050"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": false,
+    "furnishingStatus": "Furnished",
+    "facing": "North",
+    "floorNumber": 4,
+    "totalFloors": 7,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Elevator",
+      "Reserved Stilt Parking",
+      "24/7 Security",
+      "Piped Gas",
+      "Water Purifier System"
+    ],
+    "agent": {
+      "name": "Rohan Deshmukh",
+      "phone": "+91 98202 88990",
+      "email": "rohan.d@havenrealty.in",
+      "agency": "Bandra Prime Properties",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.7
+    },
+    "createdAt": "2026-08-31T08:30:00Z"
+  },
+  {
+    "id": "prop-10",
+    "title": "Royal 3 BHK Duplex in Koregaon Park",
+    "description": "Exquisite 3 BHK duplex surrounded by Koregaon Park's lush canopy. Boasts double-height living room with chandelier, custom teak wood spiral staircase, private terrace, and German modular kitchen.",
+    "type": "rent",
+    "propertyType": "Duplex",
+    "bhk": 3,
+    "bathrooms": 3,
+    "balconies": 2,
+    "areaSqFt": 2200,
+    "carpetAreaSqFt": 1820,
+    "price": 85000,
+    "location": {
+      "address": "Lane 5, Near German Bakery",
+      "locality": "Koregaon Park",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "pincode": "411001"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": false,
+    "furnishingStatus": "Furnished",
+    "facing": "East",
+    "floorNumber": 7,
+    "totalFloors": 9,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Private Rooftop Terrace",
+      "Clubhouse",
+      "Swimming Pool",
+      "2 Covered Car Parks",
+      "Security & Intercom",
+      "Pet Friendly"
+    ],
+    "agent": {
+      "name": "Siddharth Joshi",
+      "phone": "+91 98900 33445",
+      "email": "siddharth.j@havenrealty.in",
+      "agency": "Pune Landmark Properties",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.8
+    },
+    "createdAt": "2026-09-01T15:00:00Z"
+  },
+  {
+    "id": "prop-11",
+    "title": "Lavish 4 BHK Presidential Suite in DLF Phase 5",
+    "description": "High-profile corner apartment offering uninterrupted ridge views. Equipped with Poggenpohl kitchen, Miele appliances, master suite with walk-in dressing lounge, and automated mood lighting.",
+    "type": "rent",
+    "propertyType": "Apartment",
+    "bhk": 4,
+    "bathrooms": 4,
+    "balconies": 3,
+    "areaSqFt": 3400,
+    "carpetAreaSqFt": 2890,
+    "price": 220000,
+    "location": {
+      "address": "Bespoke Towers, Sector 54",
+      "locality": "DLF Phase 5",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "pincode": "122002"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": true,
+    "furnishingStatus": "Furnished",
+    "facing": "North-East",
+    "floorNumber": 26,
+    "totalFloors": 38,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Temperature Controlled Pool",
+      "Bespoke Club Lounge",
+      "Multi-Cuisine Restaurant",
+      "Valet Parking",
+      "24/7 Security",
+      "3 Covered Parking Slots"
+    ],
+    "agent": {
+      "name": "Kavita Kapoor",
+      "phone": "+91 98111 77665",
+      "email": "kavita.k@havenrealty.in",
+      "agency": "Capital Realty Group",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.9
+    },
+    "createdAt": "2026-09-02T11:45:00Z"
+  },
+  {
+    "id": "prop-12",
+    "title": "Boutique 3 BHK Townhouse with Private Yard",
+    "description": "Nestled in Jubilee Hills, this elegant tri-level townhouse offers contemporary urban serenity. Features high ceilings, private lawn, rooftop pergola, open kitchen concept, and maid quarters.",
+    "type": "buy",
+    "propertyType": "Townhouse",
+    "bhk": 3,
+    "bathrooms": 4,
+    "balconies": 2,
+    "areaSqFt": 2800,
+    "carpetAreaSqFt": 2350,
+    "price": 42000000,
+    "location": {
+      "address": "Road No. 36, Jubilee Hills",
+      "locality": "Jubilee Hills",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "pincode": "500033"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": false,
+    "furnishingStatus": "Semi-Furnished",
+    "facing": "East",
+    "floorNumber": 1,
+    "totalFloors": 3,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Private Lawn",
+      "Rooftop Deck",
+      "2 Covered Car Parks",
+      "Gated Community Security",
+      "Solar Water Heater",
+      "100% Power Backup"
+    ],
+    "agent": {
+      "name": "Naveen Chawla",
+      "phone": "+91 98490 22114",
+      "email": "naveen.c@havenrealty.in",
+      "agency": "Deccan Signature Homes",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.8
+    },
+    "createdAt": "2026-09-02T16:20:00Z"
+  },
+  {
+    "id": "prop-13",
+    "title": "Cozy 1 BHK in Indiranagar Near Metro",
+    "description": "Charming and well-ventilated 1 BHK apartment situated within walking distance of Indiranagar Metro Station and 100 Feet Road restaurants. Perfect for young urban professionals.",
+    "type": "rent",
+    "propertyType": "Apartment",
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 1,
+    "areaSqFt": 720,
+    "carpetAreaSqFt": 580,
+    "price": 28000,
+    "location": {
+      "address": "6th Main, Defense Colony",
+      "locality": "Indiranagar",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pincode": "560038"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1502005229762-ae1b46ab3a69?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1502005229762-ae1b46ab3a69?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": false,
+    "furnishingStatus": "Semi-Furnished",
+    "facing": "North",
+    "floorNumber": 3,
+    "totalFloors": 5,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Lift",
+      "Covered Bike & Car Parking",
+      "24/7 Security",
+      "Power Backup",
+      "CCTV"
+    ],
+    "agent": {
+      "name": "Ananya Reddy",
+      "phone": "+91 99800 12345",
+      "email": "ananya.r@havenrealty.in",
+      "agency": "Urban Lux Living",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.8
+    },
+    "createdAt": "2026-09-03T09:00:00Z"
+  },
+  {
+    "id": "prop-14",
+    "title": "Regal 5 BHK Independent Floor in Saket",
+    "description": "Grand floor-through 5 BHK residence in South Delhi. Features private lift lobby, expansive Italian marble drawing room, custom walk-in closets, VRV air-conditioning, and 2 servant quarters.",
+    "type": "buy",
+    "propertyType": "Apartment",
+    "bhk": 5,
+    "bathrooms": 5,
+    "balconies": 3,
+    "areaSqFt": 4800,
+    "carpetAreaSqFt": 4100,
+    "price": 75000000,
+    "location": {
+      "address": "Block J, Saket",
+      "locality": "Saket",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "pincode": "110017"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": true,
+    "furnishingStatus": "Furnished",
+    "facing": "North-East",
+    "floorNumber": 2,
+    "totalFloors": 4,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Private High-Speed Lift",
+      "Stilt Parking for 3 Cars",
+      "2 Servant Quarters",
+      "100% Power Backup",
+      "Smart Video Door Phone",
+      "Water Softener Plant"
+    ],
+    "agent": {
+      "name": "Kavita Kapoor",
+      "phone": "+91 98111 77665",
+      "email": "kavita.k@havenrealty.in",
+      "agency": "Capital Realty Group",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.9
+    },
+    "createdAt": "2026-09-03T11:30:00Z"
+  },
+  {
+    "id": "prop-15",
+    "title": "Sun-Drenched 2 BHK in Hiranandani Estate",
+    "description": "Neoclassical style 2 BHK flat in Thane's most sought-after township. Offers sweeping views of Ulhas river valley, landscaped gardens, jogging promenade, and premier international schools nearby.",
+    "type": "buy",
+    "propertyType": "Apartment",
+    "bhk": 2,
+    "bathrooms": 2,
+    "balconies": 1,
+    "areaSqFt": 1050,
+    "carpetAreaSqFt": 860,
+    "price": 14500000,
+    "location": {
+      "address": "Eagleton Tower, Ghodbunder Road",
+      "locality": "Hiranandani Estate",
+      "city": "Thane",
+      "state": "Maharashtra",
+      "pincode": "400607"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": false,
+    "furnishingStatus": "Semi-Furnished",
+    "facing": "East",
+    "floorNumber": 15,
+    "totalFloors": 28,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Swimming Pool",
+      "Township Clubhouse",
+      "Tennis & Squash Courts",
+      "24/7 Security",
+      "Reserved Covered Parking"
+    ],
+    "agent": {
+      "name": "Pooja Mehta",
+      "phone": "+91 98205 66778",
+      "email": "pooja.m@havenrealty.in",
+      "agency": "Heritage Landmarks",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.8
+    },
+    "createdAt": "2026-09-03T14:15:00Z"
+  },
+  {
+    "id": "prop-16",
+    "title": "Designer 3 BHK Penthouse in New Town",
+    "description": "Striking contemporary 3 BHK penthouse featuring private rooftop deck with barbecue counter. Overlooks the Eco Park greenery, offering quiet modern sanctuary with smart automation and imported marble.",
+    "type": "buy",
+    "propertyType": "Penthouse",
+    "bhk": 3,
+    "bathrooms": 3,
+    "balconies": 2,
+    "areaSqFt": 2600,
+    "carpetAreaSqFt": 2180,
+    "price": 24000000,
+    "location": {
+      "address": "Action Area II, Near Eco Park",
+      "locality": "New Town",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "pincode": "700156"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": false,
+    "furnishingStatus": "Furnished",
+    "facing": "South-East",
+    "floorNumber": 20,
+    "totalFloors": 20,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Private Rooftop Deck",
+      "Eco Park Views",
+      "Clubhouse & Gym",
+      "Infinity Pool",
+      "2 Covered Car Parks",
+      "24/7 Security"
+    ],
+    "agent": {
+      "name": "Subhashish Roy",
+      "phone": "+91 98300 45678",
+      "email": "subhashish.r@havenrealty.in",
+      "agency": "Bengal Heritage Realty",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.7
+    },
+    "createdAt": "2026-09-04T08:00:00Z"
+  },
+  {
+    "id": "prop-17",
+    "title": "Opulent 5 BHK Villa for Lease in Jubilee Hills",
+    "description": "Prestigious palatial villa in Hyderabad's billionaire corridor. Built over 3 levels with private indoor heated pool, Italian marble finishes, elevator, landscaped party lawn, and private guard house.",
+    "type": "rent",
+    "propertyType": "Villa",
+    "bhk": 5,
+    "bathrooms": 6,
+    "balconies": 3,
+    "areaSqFt": 6500,
+    "carpetAreaSqFt": 5600,
+    "price": 280000,
+    "location": {
+      "address": "Road 10, Jubilee Hills",
+      "locality": "Jubilee Hills",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "pincode": "500033"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": true,
+    "furnishingStatus": "Furnished",
+    "facing": "East",
+    "floorNumber": 1,
+    "totalFloors": 3,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Indoor Heated Pool",
+      "In-Villa Elevator",
+      "Landscaped Lawn",
+      "Home Automation",
+      "3 Covered Garages",
+      "Guard Room"
+    ],
+    "agent": {
+      "name": "Naveen Chawla",
+      "phone": "+91 98490 22114",
+      "email": "naveen.c@havenrealty.in",
+      "agency": "Deccan Signature Homes",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.8
+    },
+    "createdAt": "2026-09-04T09:00:00Z"
+  },
+  {
+    "id": "prop-18",
+    "title": "High-End 3 BHK Penthouse for Lease in Worli",
+    "description": "Rare rental penthouse overlooking Mumbai harbour and racecourse. Enjoy private terrace deck, full automated home climate control, Sub-Zero refrigerator, and 24/7 white-glove concierge.",
+    "type": "rent",
+    "propertyType": "Penthouse",
+    "bhk": 3,
+    "bathrooms": 3,
+    "balconies": 2,
+    "areaSqFt": 2500,
+    "carpetAreaSqFt": 2100,
+    "price": 210000,
+    "location": {
+      "address": "Worli Naka, Near Four Seasons",
+      "locality": "Worli",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": "400018"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": true,
+    "furnishingStatus": "Furnished",
+    "facing": "West",
+    "floorNumber": 35,
+    "totalFloors": 40,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Private Terrace",
+      "Racecourse Views",
+      "Valet Concierge",
+      "Clubhouse & Gym",
+      "2 Reserved Stilt Parking"
+    ],
+    "agent": {
+      "name": "Vikram Singhania",
+      "phone": "+91 98201 54321",
+      "email": "vikram.s@havenrealty.in",
+      "agency": "Prime Elite Estates",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.9
+    },
+    "createdAt": "2026-09-04T09:30:00Z"
+  },
+  {
+    "id": "prop-19",
+    "title": "Cozy 1 BHK for Sale in Powai Lakefront",
+    "description": "Rare 1 BHK opportunity in prime Powai township. Close to international corporate hubs and lakeside cafes. Compact luxury with built-in European wardrobes, modern modular kitchen, and scenic nature views.",
+    "type": "buy",
+    "propertyType": "Apartment",
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 1,
+    "areaSqFt": 580,
+    "carpetAreaSqFt": 480,
+    "price": 13500000,
+    "location": {
+      "address": "Central Avenue, Powai",
+      "locality": "Powai",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": "400076"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": false,
+    "furnishingStatus": "Semi-Furnished",
+    "facing": "East",
+    "floorNumber": 9,
+    "totalFloors": 24,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Clubhouse Access",
+      "Jogging Track",
+      "24/7 Security",
+      "Covered Stilt Parking",
+      "Piped Gas"
+    ],
+    "agent": {
+      "name": "Pooja Mehta",
+      "phone": "+91 98205 66778",
+      "email": "pooja.m@havenrealty.in",
+      "agency": "Heritage Landmarks",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.8
+    },
+    "createdAt": "2026-09-04T10:00:00Z"
+  },
+  {
+    "id": "prop-20",
+    "title": "Luxurious 2 BHK Duplex in Bandra West",
+    "description": "Stunning boutique duplex in Bandra with double volume loft ceiling, handcrafted wood staircase, sound-insulated glass balcony, and smart lighting. Steps away from artisan bakeries.",
+    "type": "buy",
+    "propertyType": "Duplex",
+    "bhk": 2,
+    "bathrooms": 2,
+    "balconies": 1,
+    "areaSqFt": 1400,
+    "carpetAreaSqFt": 1180,
+    "price": 31000000,
+    "location": {
+      "address": "Waroda Road, Bandra West",
+      "locality": "Bandra West",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": "400050"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": true,
+    "furnishingStatus": "Furnished",
+    "facing": "North",
+    "floorNumber": 5,
+    "totalFloors": 7,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Double Height Loft",
+      "Reserved Stilt Parking",
+      "Designer Kitchen",
+      "Security Camera",
+      "Intercom"
+    ],
+    "agent": {
+      "name": "Rohan Deshmukh",
+      "phone": "+91 98202 88990",
+      "email": "rohan.d@havenrealty.in",
+      "agency": "Bandra Prime Properties",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.7
+    },
+    "createdAt": "2026-09-04T10:30:00Z"
+  },
+  {
+    "id": "prop-21",
+    "title": "Scenic 4 BHK Villa for Rent in Whitefield",
+    "description": "Sprawling gated villa in Prestige Ozone. Includes private manicured garden, servant room, expansive open-plan granite kitchen, and access to an exclusive 30,000 sq ft clubhouse with tennis courts.",
+    "type": "rent",
+    "propertyType": "Villa",
+    "bhk": 4,
+    "bathrooms": 4,
+    "balconies": 2,
+    "areaSqFt": 3800,
+    "carpetAreaSqFt": 3250,
+    "price": 140000,
+    "location": {
+      "address": "Prestige Ozone, Varthur Main Road",
+      "locality": "Whitefield",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pincode": "560066"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": false,
+    "furnishingStatus": "Semi-Furnished",
+    "facing": "East",
+    "floorNumber": 1,
+    "totalFloors": 2,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Private Lawn",
+      "Clubhouse & Gym",
+      "Swimming Pool",
+      "Tennis Courts",
+      "2 Covered Car Parks",
+      "24/7 Security"
+    ],
+    "agent": {
+      "name": "Karthik Nair",
+      "phone": "+91 97420 44556",
+      "email": "karthik.n@havenrealty.in",
+      "agency": "Silicon Nest Realty",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.6
+    },
+    "createdAt": "2026-09-04T11:00:00Z"
+  },
+  {
+    "id": "prop-22",
+    "title": "Modern 2 BHK Townhouse in Koregaon Park",
+    "description": "Chic 2 BHK townhouse with private brick-paved patio in green Koregaon Park. High vaulted wood ceiling, open breakfast counter, and walking distance to prime restaurants.",
+    "type": "buy",
+    "propertyType": "Townhouse",
+    "bhk": 2,
+    "bathrooms": 2,
+    "balconies": 1,
+    "areaSqFt": 1550,
+    "carpetAreaSqFt": 1320,
+    "price": 19500000,
+    "location": {
+      "address": "North Main Road, Koregaon Park",
+      "locality": "Koregaon Park",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "pincode": "411001"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": false,
+    "furnishingStatus": "Furnished",
+    "facing": "North",
+    "floorNumber": 1,
+    "totalFloors": 2,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Private Patio",
+      "Covered Car Park",
+      "24/7 Security",
+      "Pet Friendly",
+      "Power Backup"
+    ],
+    "agent": {
+      "name": "Siddharth Joshi",
+      "phone": "+91 98900 33445",
+      "email": "siddharth.j@havenrealty.in",
+      "agency": "Pune Landmark Properties",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.8
+    },
+    "createdAt": "2026-09-04T11:30:00Z"
+  },
+  {
+    "id": "prop-23",
+    "title": "Serene 1 BHK Studio for Sale in DLF Cyber City",
+    "description": "Fully serviced luxury studio in DLF Phase 5. Features concierge lobby, swimming pool, gym, high rental yield potential, and walking distance to rapid metro station.",
+    "type": "buy",
+    "propertyType": "Studio",
+    "bhk": 1,
+    "bathrooms": 1,
+    "balconies": 1,
+    "areaSqFt": 650,
+    "carpetAreaSqFt": 530,
+    "price": 12500000,
+    "location": {
+      "address": "Sector 54, Golf Course Road",
+      "locality": "DLF Phase 5",
+      "city": "Gurugram",
+      "state": "Haryana",
+      "pincode": "122002"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1502005229762-ae1b46ab3a69?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": false,
+    "furnishingStatus": "Furnished",
+    "facing": "East",
+    "floorNumber": 12,
+    "totalFloors": 22,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Rooftop Pool",
+      "Fitness Center",
+      "Business Center",
+      "Basement Parking",
+      "24/7 Concierge"
+    ],
+    "agent": {
+      "name": "Kavita Kapoor",
+      "phone": "+91 98111 77665",
+      "email": "kavita.k@havenrealty.in",
+      "agency": "Capital Realty Group",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.9
+    },
+    "createdAt": "2026-09-04T12:00:00Z"
+  },
+  {
+    "id": "prop-24",
+    "title": "Prime 5 BHK Sky Villa in Worli",
+    "description": "Spectacular 5 BHK duplex sky villa with double-height ocean view balcony. Custom bar counter, steam & sauna, 4 car parking bays, and 360-degree views of the Arabian sea and Bandra-Worli Sea Link.",
+    "type": "buy",
+    "propertyType": "Villa",
+    "bhk": 5,
+    "bathrooms": 6,
+    "balconies": 4,
+    "areaSqFt": 7100,
+    "carpetAreaSqFt": 6200,
+    "price": 138000000,
+    "location": {
+      "address": "Sea Face Avenue, Worli",
+      "locality": "Worli",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "pincode": "400018"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "featuredImage": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+    "isVerified": true,
+    "isFeatured": true,
+    "furnishingStatus": "Furnished",
+    "facing": "West",
+    "floorNumber": 48,
+    "totalFloors": 52,
+    "possessionStatus": "Ready to Move",
+    "possessionDate": "Immediate",
+    "amenities": [
+      "Private Sky Deck",
+      "Steam & Sauna",
+      "Sea Link Panoramic Views",
+      "4 Reserved Parking Bays",
+      "Private Butler Service",
+      "Infinity Pool"
+    ],
+    "agent": {
+      "name": "Vikram Singhania",
+      "phone": "+91 98201 54321",
+      "email": "vikram.s@havenrealty.in",
+      "agency": "Prime Elite Estates",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "rating": 4.9
+    },
+    "createdAt": "2026-09-04T12:30:00Z"
+  }
+]
