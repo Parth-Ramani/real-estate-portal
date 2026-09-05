@@ -47,17 +47,26 @@ export default function AmenitiesList({ amenities }: AmenitiesListProps) {
     <Paper
       elevation={0}
       sx={{
-        p: { xs: 2.5, md: 3.5 },
+        p: { xs: 2, sm: 2.5, md: 3.5 },
         borderRadius: 4,
         border: '1px solid #E2E8F0',
         backgroundColor: '#FFFFFF',
         mb: 4,
+        overflow: 'hidden',
       }}
     >
-      <Typography variant="h6" sx={{ fontWeight: 800, color: '#0F172A', mb: 1 }}>
+      <Typography
+        variant="h6"
+        sx={{
+          fontWeight: 800,
+          color: '#0F172A',
+          mb: 1,
+          fontSize: { xs: '1.05rem', sm: '1.25rem' },
+        }}
+      >
         Features & Amenities
       </Typography>
-      <Typography variant="body2" sx={{ color: '#64748B', mb: 3 }}>
+      <Typography variant="body2" sx={{ color: '#64748B', mb: { xs: 2, sm: 3 }, fontSize: { xs: '0.8rem', sm: '0.875rem' } }}>
         Designed to provide an elevated lifestyle of comfort, security, and recreation.
       </Typography>
 
@@ -65,11 +74,12 @@ export default function AmenitiesList({ amenities }: AmenitiesListProps) {
         sx={{
           display: 'grid',
           gridTemplateColumns: {
-            xs: '1fr',
-            sm: 'repeat(2, 1fr)',
-            md: 'repeat(3, 1fr)',
+            xs: 'repeat(2, minmax(0, 1fr))',
+            sm: 'repeat(2, minmax(0, 1fr))',
+            md: 'repeat(3, minmax(0, 1fr))',
           },
-          gap: 2,
+          gap: { xs: 1.25, sm: 2 },
+          width: '100%',
         }}
       >
         {amenities.map((amenity, index) => (
@@ -78,11 +88,14 @@ export default function AmenitiesList({ amenities }: AmenitiesListProps) {
             sx={{
               display: 'flex',
               alignItems: 'center',
-              gap: 1.5,
-              p: 1.5,
+              gap: { xs: 1, sm: 1.5 },
+              p: { xs: 1.25, sm: 1.5 },
               borderRadius: 2.5,
               backgroundColor: '#F8FAFC',
               border: '1px solid #F1F5F9',
+              minWidth: 0,
+              overflow: 'hidden',
+              boxSizing: 'border-box',
               transition: 'all 0.2s',
               '&:hover': {
                 backgroundColor: '#FFFFFF',
@@ -93,8 +106,8 @@ export default function AmenitiesList({ amenities }: AmenitiesListProps) {
           >
             <Box
               sx={{
-                width: 36,
-                height: 36,
+                width: { xs: 30, sm: 36 },
+                height: { xs: 30, sm: 36 },
                 borderRadius: 2,
                 backgroundColor: '#FFFFFF',
                 display: 'flex',
@@ -102,11 +115,24 @@ export default function AmenitiesList({ amenities }: AmenitiesListProps) {
                 justifyContent: 'center',
                 boxShadow: '0 1px 3px rgba(0,0,0,0.05)',
                 flexShrink: 0,
+                '& svg': {
+                  fontSize: { xs: 17, sm: 20 },
+                },
               }}
             >
               {getAmenityIcon(amenity)}
             </Box>
-            <Typography variant="body2" sx={{ fontWeight: 600, color: '#1E293B' }}>
+            <Typography
+              variant="body2"
+              sx={{
+                fontWeight: 600,
+                color: '#1E293B',
+                fontSize: { xs: '0.78rem', sm: '0.875rem' },
+                lineHeight: 1.25,
+                wordBreak: 'break-word',
+                minWidth: 0,
+              }}
+            >
               {amenity}
             </Typography>
           </Box>

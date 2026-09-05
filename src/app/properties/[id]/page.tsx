@@ -194,7 +194,7 @@ export default function PropertyDetailPage() {
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: '#F8FAFC' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: '#F8FAFC', overflowX: 'hidden' }}>
       <Navbar
         favoriteCount={favoriteCount}
         activeTab="none"
@@ -373,6 +373,8 @@ export default function PropertyDetailPage() {
               color: '#0F172A',
               letterSpacing: '-0.02em',
               lineHeight: 1.25,
+              fontSize: { xs: '1.4rem', sm: '1.85rem', md: '2.25rem' },
+              wordBreak: 'break-word',
               mb: 1,
             }}
           >
@@ -380,8 +382,8 @@ export default function PropertyDetailPage() {
           </Typography>
 
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.8 }}>
-            <LocationOnIcon sx={{ color: '#D97706', fontSize: 20 }} />
-            <Typography variant="body1" sx={{ color: '#64748B', fontWeight: 500 }}>
+            <LocationOnIcon sx={{ color: '#D97706', fontSize: 20, flexShrink: 0 }} />
+            <Typography variant="body1" sx={{ color: '#64748B', fontWeight: 500, fontSize: { xs: '0.85rem', sm: '1rem' }, wordBreak: 'break-word' }}>
               {property.location.address}, {property.location.locality}, {property.location.city},{' '}
               {property.location.state} - {property.location.pincode}
             </Typography>
@@ -393,12 +395,13 @@ export default function PropertyDetailPage() {
           sx={{
             display: 'grid',
             gridTemplateColumns: { xs: '1fr', lg: '1fr 380px' },
-            gap: 4,
+            gap: { xs: 3, md: 4 },
             alignItems: 'start',
+            width: '100%',
           }}
         >
           {/* Left Column: Gallery, Specs, Details, Amenities, EMI */}
-          <Box sx={{ minWidth: 0 }}>
+          <Box sx={{ minWidth: 0, width: '100%', overflow: 'hidden' }}>
             {/* Image Gallery */}
             <PropertyGallery
               images={property.images}
@@ -414,17 +417,18 @@ export default function PropertyDetailPage() {
             <Paper
               elevation={0}
               sx={{
-                p: { xs: 2.5, md: 3.5 },
+                p: { xs: 2, sm: 2.5, md: 3.5 },
                 borderRadius: 4,
                 border: '1px solid #E2E8F0',
                 backgroundColor: '#FFFFFF',
                 mb: 4,
+                overflow: 'hidden',
               }}
             >
-              <Typography variant="h6" sx={{ fontWeight: 800, color: '#0F172A', mb: 2 }}>
+              <Typography variant="h6" sx={{ fontWeight: 800, color: '#0F172A', mb: 2, fontSize: { xs: '1.05rem', sm: '1.25rem' } }}>
                 About this Residence
               </Typography>
-              <Typography variant="body1" sx={{ color: '#334155', lineHeight: 1.8, mb: 3 }}>
+              <Typography variant="body1" sx={{ color: '#334155', lineHeight: 1.8, mb: 3, fontSize: { xs: '0.9rem', sm: '1rem' } }}>
                 {property.description}
               </Typography>
 
@@ -433,23 +437,23 @@ export default function PropertyDetailPage() {
               <Box
                 sx={{
                   display: 'grid',
-                  gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)' },
+                  gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, minmax(0, 1fr))' },
                   gap: 2,
                 }}
               >
-                <Box>
+                <Box sx={{ minWidth: 0 }}>
                   <Typography variant="caption" sx={{ color: '#64748B', fontWeight: 600, display: 'block' }}>
                     Possession Status
                   </Typography>
-                  <Typography variant="body2" sx={{ fontWeight: 700, color: '#0F172A' }}>
+                  <Typography variant="body2" sx={{ fontWeight: 700, color: '#0F172A', wordBreak: 'break-word' }}>
                     {property.possessionStatus} ({property.possessionDate})
                   </Typography>
                 </Box>
-                <Box>
+                <Box sx={{ minWidth: 0 }}>
                   <Typography variant="caption" sx={{ color: '#64748B', fontWeight: 600, display: 'block' }}>
                     RERA Registration
                   </Typography>
-                  <Typography variant="body2" sx={{ fontWeight: 700, color: '#059669' }}>
+                  <Typography variant="body2" sx={{ fontWeight: 700, color: '#059669', wordBreak: 'break-word' }}>
                     Approved & Verified Title
                   </Typography>
                 </Box>
@@ -469,22 +473,33 @@ export default function PropertyDetailPage() {
               <Paper
                 elevation={3}
                 sx={{
-                  p: 3.5,
+                  p: { xs: 2.25, sm: 3, md: 3.5 },
                   borderRadius: 4,
                   backgroundColor: '#FFFFFF',
                   border: '1px solid #E2E8F0',
                   boxShadow: '0 10px 30px -5px rgba(15, 23, 42, 0.08)',
                   mb: 3,
+                  overflow: 'hidden',
                 }}
               >
                 {/* Price Display */}
                 <Typography variant="caption" sx={{ color: '#64748B', fontWeight: 600, display: 'block' }}>
                   {property.type === 'buy' ? 'Total Asking Price' : 'Monthly Rent'}
                 </Typography>
-                <Typography variant="h3" sx={{ fontWeight: 800, color: '#0F172A', my: 0.5 }}>
+                <Typography
+                  variant="h3"
+                  sx={{
+                    fontWeight: 800,
+                    color: '#0F172A',
+                    my: 0.5,
+                    fontSize: { xs: '1.75rem', sm: '2.25rem', md: '2.5rem' },
+                    lineHeight: 1.15,
+                    wordBreak: 'break-word',
+                  }}
+                >
                   {formatPrice(property.price, property.type)}
                 </Typography>
-                <Typography variant="body2" sx={{ color: '#64748B', mb: 3 }}>
+                <Typography variant="body2" sx={{ color: '#64748B', mb: 3, fontSize: { xs: '0.8rem', sm: '0.875rem' } }}>
                   Rate:{' '}
                   <strong>{formatPricePerSqFt(property.price, property.areaSqFt, property.type)}</strong>{' '}
                   (All Inclusive)
@@ -493,13 +508,13 @@ export default function PropertyDetailPage() {
                 <Divider sx={{ mb: 3 }} />
 
                 {/* Agent Card */}
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 3 }}>
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: { xs: 1.5, sm: 2 }, mb: 3 }}>
                   <Avatar
                     src={property.agent.avatar}
                     alt={property.agent.name}
-                    sx={{ width: 56, height: 56, border: '2px solid #D97706' }}
+                    sx={{ width: { xs: 48, sm: 56 }, height: { xs: 48, sm: 56 }, border: '2px solid #D97706', flexShrink: 0 }}
                   />
-                  <Box>
+                  <Box sx={{ minWidth: 0, overflow: 'hidden' }}>
                     <Typography variant="subtitle1" sx={{ fontWeight: 700, color: '#0F172A', lineHeight: 1.2 }}>
                       {property.agent.name}
                     </Typography>
@@ -537,28 +552,35 @@ export default function PropertyDetailPage() {
                 {/* Secondary CTAs */}
                 <Box sx={{ display: 'flex', gap: 1.5, mb: 3 }}>
                   <Button
-                    fullWidth
                     variant="outlined"
                     startIcon={<PhoneIcon />}
                     href={`tel:${property.agent.phone}`}
                     sx={{
+                      flex: 1,
                       borderRadius: 2.5,
                       borderColor: '#CBD5E1',
                       color: '#0F172A',
                       fontWeight: 600,
+                      fontSize: { xs: '0.825rem', sm: '0.875rem' },
+                      py: 1.2,
                     }}
                   >
                     Call Agent
                   </Button>
                   <Button
-                    fullWidth
                     variant="outlined"
                     color="success"
                     startIcon={<WhatsAppIcon />}
                     href={getAgentWhatsAppUrl(property.agent, property, currentUrl)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    sx={{ borderRadius: 2.5, fontWeight: 600 }}
+                    sx={{
+                      flex: 1,
+                      borderRadius: 2.5,
+                      fontWeight: 600,
+                      fontSize: { xs: '0.825rem', sm: '0.875rem' },
+                      py: 1.2,
+                    }}
                   >
                     WhatsApp
                   </Button>

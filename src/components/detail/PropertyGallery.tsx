@@ -26,7 +26,7 @@ export default function PropertyGallery({
       <Box
         sx={{
           position: 'relative',
-          height: { xs: 300, sm: 420, md: 500 },
+          height: { xs: 240, sm: 360, md: 480 },
           borderRadius: 4,
           overflow: 'hidden',
           backgroundColor: '#0F172A',
@@ -55,11 +55,13 @@ export default function PropertyGallery({
         <Box
           sx={{
             position: 'absolute',
-            top: 16,
-            left: 16,
+            top: { xs: 12, sm: 16 },
+            left: { xs: 12, sm: 16 },
             display: 'flex',
-            gap: 1,
+            flexWrap: 'wrap',
+            gap: 0.75,
             zIndex: 2,
+            maxWidth: 'calc(100% - 24px)',
           }}
         >
           <Chip
@@ -70,11 +72,12 @@ export default function PropertyGallery({
               backgroundColor: listingType === 'buy' ? '#0F172A' : '#D97706',
               color: '#FFFFFF',
               boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+              fontSize: { xs: '0.7rem', sm: '0.75rem' },
             }}
           />
           {isVerified && (
             <Chip
-              icon={<VerifiedIcon sx={{ fontSize: '16px !important', color: '#10B981 !important' }} />}
+              icon={<VerifiedIcon sx={{ fontSize: '15px !important', color: '#10B981 !important' }} />}
               label="VERIFIED RESIDENCE"
               size="small"
               sx={{
@@ -82,6 +85,7 @@ export default function PropertyGallery({
                 backgroundColor: 'rgba(255, 255, 255, 0.95)',
                 color: '#0F172A',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                fontSize: { xs: '0.7rem', sm: '0.75rem' },
               }}
             />
           )}
@@ -91,22 +95,22 @@ export default function PropertyGallery({
         <Box
           sx={{
             position: 'absolute',
-            bottom: 16,
-            right: 16,
+            bottom: { xs: 12, sm: 16 },
+            right: { xs: 12, sm: 16 },
             backgroundColor: 'rgba(15, 23, 42, 0.85)',
             color: '#FFFFFF',
-            px: 2,
-            py: 0.7,
+            px: { xs: 1.5, sm: 2 },
+            py: { xs: 0.5, sm: 0.7 },
             borderRadius: 3,
             display: 'flex',
             alignItems: 'center',
             gap: 0.8,
-            fontSize: '0.8125rem',
+            fontSize: { xs: '0.75rem', sm: '0.8125rem' },
             fontWeight: 700,
             backdropFilter: 'blur(6px)',
           }}
         >
-          <PhotoCameraIcon sx={{ fontSize: 18 }} />
+          <PhotoCameraIcon sx={{ fontSize: 16 }} />
           {images.length} Photos
         </Box>
       </Box>

@@ -46,20 +46,21 @@ export default function EmiCalculator({ propertyPrice, listingType }: EmiCalcula
     <Paper
       elevation={0}
       sx={{
-        p: { xs: 2.5, md: 3.5 },
+        p: { xs: 2, sm: 2.5, md: 3.5 },
         borderRadius: 4,
         border: '1px solid #E2E8F0',
         backgroundColor: '#FFFFFF',
         mb: 4,
+        overflow: 'hidden',
       }}
     >
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.2, mb: 1 }}>
-        <CalculateOutlinedIcon sx={{ color: '#D97706', fontSize: 28 }} />
-        <Typography variant="h6" sx={{ fontWeight: 800, color: '#0F172A' }}>
+        <CalculateOutlinedIcon sx={{ color: '#D97706', fontSize: 28, flexShrink: 0 }} />
+        <Typography variant="h6" sx={{ fontWeight: 800, color: '#0F172A', fontSize: { xs: '1.05rem', sm: '1.25rem' } }}>
           {isBuy ? 'Home Loan & EMI Estimator' : 'Rental Cost & Deposit Estimator'}
         </Typography>
       </Box>
-      <Typography variant="body2" sx={{ color: '#64748B', mb: 3 }}>
+      <Typography variant="body2" sx={{ color: '#64748B', mb: { xs: 2, sm: 3 }, fontSize: { xs: '0.8rem', sm: '0.875rem' } }}>
         {isBuy
           ? 'Estimate your monthly home loan installments based on tenure and current bank interest rates.'
           : 'Understand your monthly outflow including maintenance and upfront security deposit.'}
@@ -162,20 +163,31 @@ export default function EmiCalculator({ propertyPrice, listingType }: EmiCalcula
           </Box>
 
           {/* Breakdown Card Column */}
-          <Box>
+          <Box sx={{ minWidth: 0 }}>
             <Box
               sx={{
-                p: 3,
+                p: { xs: 2.25, sm: 3 },
                 borderRadius: 3.5,
                 background: 'linear-gradient(135deg, #0F172A 0%, #1E293B 100%)',
                 color: '#FFFFFF',
                 boxShadow: '0 10px 25px rgba(15, 23, 42, 0.2)',
+                minWidth: 0,
+                overflow: 'hidden',
               }}
             >
               <Typography variant="caption" sx={{ color: '#94A3B8', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                 Estimated Monthly EMI
               </Typography>
-              <Typography variant="h4" sx={{ fontWeight: 800, color: '#F59E0B', my: 1 }}>
+              <Typography
+                variant="h4"
+                sx={{
+                  fontWeight: 800,
+                  color: '#F59E0B',
+                  my: 1,
+                  fontSize: { xs: '1.5rem', sm: '1.85rem', md: '2.125rem' },
+                  wordBreak: 'break-word',
+                }}
+              >
                 ₹{emi.toLocaleString('en-IN')}{' '}
                 <Typography component="span" variant="body2" sx={{ color: '#CBD5E1' }}>
                   /month
